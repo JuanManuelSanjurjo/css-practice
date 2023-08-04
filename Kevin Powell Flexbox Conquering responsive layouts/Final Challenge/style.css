@@ -1,0 +1,237 @@
+:root{
+    --blue3: #2e323f;
+    --blue2: #3b4050;
+    --blue1: #6f737f;
+    --white: #FFFFFF;
+    --beige: #a59678;
+}
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif; 
+*/
+
+*,*::after,*::before{               
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px;
+    background: #3b4050;
+    color: var(--white);
+    margin: 0;
+    letter-spacing: 0.125rem;
+}
+
+section img{
+    width: 100%;
+    margin: 50px 0;;
+}
+
+section{
+    max-width: 80%;
+    margin: auto;
+    
+}
+.menu-btn{
+    background: var(--blue1);
+    display: block;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+h1,h2,h3{
+    font-family: 'Oswald', sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color: var(--beige);
+    /* font-size: 90px; */
+    font-size: clamp(3rem, 5vw + 1rem, 90px);
+}
+h3{
+    color: var(--beige);
+}
+h1 > span{
+    color: var(--white);
+}
+
+.hero p{
+    font-size: 24px;
+}
+
+section, section button{
+    margin: 50px auto;
+}
+
+button{
+    display: block;
+    color: var(--white);
+    font-family: 'Oswald', sans-serif; 
+    font-size: 24px;
+    background: var(--beige);
+    border: none;
+    padding:5px 35px;
+    border-radius: 30px;
+}
+
+nav button{
+    display: inline;
+    font-size: 18px;
+}
+
+.container.nav{
+    background-color: var(--blue3);
+
+}
+nav{
+    padding: 15px 0;
+    display: flex;
+    width: 80%;    
+    margin: auto;
+    justify-content: space-between; 
+    position: relative;
+}
+
+.desktop-nav{
+   width: 100%;
+   display: none;
+   background-color: var(--blue3);
+   gap: 25px;
+   padding: 25px;
+  
+   border-radius: 0 0 15px 15px;
+
+
+}
+
+.menu-visible{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Oswald', sans-serif; 
+    font-size: 18px;
+}
+
+.first-section{
+    text-align: center;
+    margin: 100px auto;
+}
+.container.one{
+    background-color:rgb(243, 240, 240);
+    color: var(--blue1);
+}
+
+.container.one h2{
+    color: var(--beige);
+    font-family: 'Oswald', sans-serif; 
+    font-size: 30px;
+}
+
+.container.two{
+    background-color: var(--white);
+    color: var(--blue1);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px;
+}
+
+.container.two h2{
+    color: var(--beige);
+    font-size: 36px;
+}
+
+.card{
+    background-color:var(--blue2);
+    color: var(--white);
+    text-align: center;
+    padding: 35px 35px;
+    margin: 25px 0;
+}
+.container.three{
+    text-align: center;
+}
+.container.three h2{
+    font-size: 60px;
+}
+
+section div{
+    margin-top: 20px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+
+
+
+/* 
+@media (min-width:700px){
+
+    .container .card-flex {
+        display: flex;
+        gap: 15px;
+    }
+    .first-section{
+        display: flex;
+        gap: 35px;
+    }
+    .column{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .menu-btn{
+        display: none;
+    } 
+
+    nav .desktop-nav{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+        gap: 25px;
+        margin: auto;
+    }
+   
+
+   
+}
+
+@media (min-width:1000px){
+    nav .desktop-nav{
+        display: flex;
+    }
+    .menu-btn{
+        display: none;
+    } 
+    .hero{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 0;
+        gap: 10%;
+    }
+    .hero h1{
+        font-size: 90px;
+    }
+    .container.three section > div {
+        display: flex;
+        
+        color: red;
+    }
+  
+   
+} */
